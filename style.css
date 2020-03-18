@@ -1,0 +1,139 @@
+body{
+    display: block;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-image: url("background.jpg");
+    background-position-y: -90px;
+}
+.Backgorund{
+    background-image: url("background.jpg");
+    display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 0%;
+}
+.calculator{
+    width: 320px;
+    height: 535px;
+    background-color: gray;
+    margin: 0 auto;
+    top: 70px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0
+    rgba(0, 0, 0, 0.19);
+    opacity: 0.5;
+}
+#result{
+    height: 25px;
+}
+#history{
+    text-align: right;
+    height: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-bottom: -30px;
+    color: #e1e1e1;
+    background-color: #2a857d;
+}
+#history p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0px;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin-top: -10px;
+    font-size: 30px;
+    color: white;
+    background-color: #2a857d;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number{
+    background-color: white;
+    font-size: 24px;
+}
+.empty{
+    background-color: gray;
+}
+.operator{
+    background-color: #1e3170;
+    font-size: 20px;
+    color: white;
+}
+.number .empty{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(1){
+    font-size: 20px;
+    background-color: #2a857d;
+}
+button:nth-child(2){
+    font-size: 20px;
+    background-color: #2a857d;
+}
+@media only screen and (max-width: 400px) {
+    body {
+        height: auto;
+        background-size: cover;
+        background-position-y: -90px;
+    }
+    .calculator{
+        margin-top: -50px;
+        
+    }
+}
+@media only screen and (max-width: 700px) {
+    body {
+      
+        height: auto;
+        background-size: cover;
+    }
+    .calculator{
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    body {
+        padding: 100px;
+        height: auto;
+        background-size: cover;
+        background-position-x: -90px;
+    }
+    .calculator{
+        margin-top: -50px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    body {
+        padding: 100px;
+        height: auto;
+        background-size: cover;
+        background-position-y: 10px;
+    }
+    .calculator{
+        margin-top: -50px;
+    }
+}

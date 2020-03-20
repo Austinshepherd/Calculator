@@ -1,6 +1,7 @@
 body{
     display: block;
     padding: 0;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
@@ -11,6 +12,7 @@ body{
     background-image: url("background.jpg");
     display: block;
     width: 100%;
+    position: fixed;
     height: auto;
     background-size: cover;
     padding: 0%;
@@ -18,14 +20,14 @@ body{
 .calculator{
     width: 320px;
     height: 535px;
-    background-color: gray;
+    background-color: rgb(189, 189, 189);
     margin: 0 auto;
     top: 70px;
     position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0
     rgba(0, 0, 0, 0.19);
-    opacity: 0.5;
+    opacity: 0.7;
 }
 #result{
     height: 25px;
@@ -117,7 +119,7 @@ button:nth-child(2){
 }
 @media only screen and (max-width: 900px) {
     body {
-        padding: 100px;
+        padding: 0px;
         height: auto;
         background-size: cover;
         background-position-x: -90px;

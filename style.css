@@ -73,7 +73,7 @@ body{
     font-size: 24px;
 }
 .empty{
-    background-color: gray;
+    background-color: rgb(189, 189, 189);
 }
 .operator{
     background-color: #1e3170;

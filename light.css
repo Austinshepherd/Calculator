@@ -21,6 +21,7 @@ body{
 .calculator{
     width: 320px;
     height: 535px;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     top: 70px;
     position: relative;
@@ -39,8 +40,7 @@ body{
     font-size: 15px;
     margin-bottom: -30px;
     color: #e1e1e1;
-    background-color: #afa47e;
-    opacity: 0.85;
+    background-color: #535353;
 }
 #history p{
     margin: 0;
@@ -53,8 +53,7 @@ body{
     margin-top: -10px;
     font-size: 30px;
     color: white;
-    background-color: #afa47e;
-    opacity: 0.85;
+    background-color: #535353;
 }
 #keyboard{
     height: 400px;
@@ -79,7 +78,6 @@ body{
 }
 .empty{
     background-color: rgb(88, 63, 53);
-    opacity: 0;
 }
 .operator{
     background-color: #353842;
@@ -136,6 +134,7 @@ button:nth-child(2):hover{
         opacity: 0.8;
     }
 }
+
 @media only screen and (max-width: 700px) {
     body {
       

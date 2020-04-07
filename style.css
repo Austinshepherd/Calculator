@@ -2,27 +2,33 @@ body{
     display: block;
     padding: 0 !important;
     width: 100%;
-    height: 100% !important;
-    margin: 0px !important;
+    height: 900px !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
     background-image: url("background.jpg");
-    background-position-y: 0px;
+    background-position-y: -90px;
 }
-
+.Backgorund{
+    display: block;
+    width: 100%;
+    margin-top: 90px;
+    position: fixed;
+    height: auto;
+    background-size: cover;
+    padding: 0%;
+}
 .calculator{
-    width: 698px;
+    width: 320px;
     height: 535px;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(88, 63, 53);
     margin: 0 auto;
     top: 70px;
     position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2), 0 6px 20px 0
     rgba(0, 0, 0, 0.19);
-    opacity: 0.95;
-    
+    opacity: 0.92;
 }
 #result{
     height: 25px;
@@ -34,7 +40,7 @@ body{
     font-size: 15px;
     margin-bottom: -30px;
     color: #e1e1e1;
-    background-color: #2a857d;
+    background-color: #535353;
 }
 #history p{
     margin: 0;
@@ -47,32 +53,40 @@ body{
     margin-top: -10px;
     font-size: 30px;
     color: white;
-    background-color: #2a857d;
+    background-color: #535353;
 }
 #keyboard{
     height: 400px;
 }
 .operator, .number, .empty{
-    width: 170px;
-    height: 70px;
-    margin: 2px;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
     float: left;
+    border-radius: 50%;
     border-width: 0;
     font-weight: bold;
     font-size: 15px;
 }
-
-
 .number{
-    background-color: white;
+    background-color: rgb(190, 188, 140);
     font-size: 24px;
 }
+.number:hover{
+    background-color: rgb(216, 213, 157);
+    font-size: 25px;
+}
 .empty{
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(88, 63, 53);
 }
 .operator{
-    background-color: #1e3170;
+    background-color: #353842;
     font-size: 20px;
+    color: white;
+}
+.operator:hover{
+    background-color: #414450;
+    font-size: 21px;
     color: white;
 }
 .number .empty{
@@ -86,11 +100,19 @@ body{
 }
 button:nth-child(1){
     font-size: 20px;
-    background-color: #2a857d;
+    background-color: #777777;
+}
+button:nth-child(1):hover{
+    font-size: 21px;
+    background-color: #8f8f8f;
 }
 button:nth-child(2){
     font-size: 20px;
-    background-color: #2a857d;
+    background-color: #777777;
+}
+button:nth-child(2):hover{
+    font-size: 21px;
+    background-color: #8f8f8f;
 }
 @media only screen and (max-width: 400px) {
     body {
@@ -111,21 +133,6 @@ button:nth-child(2){
     }
     .calculator{
         margin-top: -50px;
-        width: 100% !important;
-    }
-    .operator, .number, .empty{
-        width: 100px;
-        height: 40px;
-        margin: 2px;
-        float: left;
-        
-        border-width: 0;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    #keyboard{
-        height: 400px;
-        max-width: 500px !important;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -133,7 +140,7 @@ button:nth-child(2){
         padding: 0px;
         height: auto;
         background-size: cover;
-      
+        background-position-x: -90px;
     }
     .calculator{
         margin-top: -50px;
@@ -144,6 +151,7 @@ button:nth-child(2){
         padding: 100px;
         height: auto;
         background-size: cover;
+        background-position-y: 10px;
     }
     .calculator{
         margin-top: -50px;
